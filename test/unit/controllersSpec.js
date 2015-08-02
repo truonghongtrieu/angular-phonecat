@@ -19,7 +19,7 @@ describe('PhoneCat controllers', function() {
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('phones/phones.json').
+      $httpBackend.expectGET('app/phones/phones.json').
           respond([{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
 
       scope = $rootScope.$new();
@@ -47,14 +47,14 @@ describe('PhoneCat controllers', function() {
         xyzPhoneData = function() {
           return {
             name: 'phone xyz',
-                images: ['image/url1.png', 'image/url2.png']
+                images: ['app/image/url1.png', 'app/image/url2.png']
           }
         };
 
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('phones/xyz.json').respond(xyzPhoneData());
+      $httpBackend.expectGET('app/phones/xyz.json').respond(xyzPhoneData());
 
       $routeParams.phoneId = 'xyz';
       scope = $rootScope.$new();

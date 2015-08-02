@@ -5,7 +5,7 @@
 describe('PhoneCat App', function() {
 
   it('should redirect index.html to index.html#/phones', function() {
-    browser.get('app/index.html');
+    browser.get('index.html');
     browser.getLocationAbsUrl().then(function(url) {
         expect(url).toEqual('/phones');
       });
@@ -15,7 +15,7 @@ describe('PhoneCat App', function() {
   describe('Phone list view', function() {
 
     beforeEach(function() {
-      browser.get('app/index.html#/phones');
+      browser.get('index.html#/phones');
     });
 
 
@@ -67,7 +67,7 @@ describe('PhoneCat App', function() {
       query.sendKeys('nexus');
       element.all(by.css('.phones li a')).first().click();
       browser.getLocationAbsUrl().then(function(url) {
-        expect(url).toEqual('/phones/nexus-s');
+        expect(url).toEqual('app/phones/nexus-s');
       });
     });
   });
@@ -76,7 +76,7 @@ describe('PhoneCat App', function() {
   describe('Phone detail view', function() {
 
     beforeEach(function() {
-      browser.get('app/index.html#/phones/nexus-s');
+      browser.get('index.html#/phones/nexus-s');
     });
 
 
