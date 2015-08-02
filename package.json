@@ -6,7 +6,7 @@
   "repository": "https://github.com/angular/angular-phonecat",
   "license": "MIT",
   "engines": {
-    "node": "0.12.07",
+    "node": "0.12.7",
     "npm": "2.11.3"
   },
   "devDependencies": {
