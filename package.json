@@ -1,10 +1,13 @@
 {
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "name": "angular-phonecat",
   "description": "A tutorial application for AngularJS",
   "repository": "https://github.com/angular/angular-phonecat",
   "license": "MIT",
+  "engines": {
+    "node": "0.10.7"
+  },
   "devDependencies": {
     "karma": "^0.12.16",
     "karma-chrome-launcher": "^0.1.4",
