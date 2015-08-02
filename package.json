@@ -6,8 +6,8 @@
   "repository": "https://github.com/angular/angular-phonecat",
   "license": "MIT",
   "engines": {
-    "node": "0.11.13",
-    "npm": "1.4.3"
+    "node": "0.12.07",
+    "npm": "2.11.3"
   },
   "devDependencies": {
     "karma": "^0.12.16",
@@ -23,10 +23,10 @@
   "scripts": {
     "postinstall": "bower cache clean && bower install",
 
-    "prestart": "sudo npm install",
+    "prestart": "npm install",
     "start": "http-server -a 0.0.0.0 -p 8000",
 
-    "pretest": "sudo npm install",
+    "pretest": "npm install",
     "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
     "test-single-run": "node node_modules/karma/bin/karma start test/karma.conf.js  --single-run",
 
